@@ -1,0 +1,20 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native #配置成使用本地文件
+  cloud:
+    config:
+      server:
+        git: #配置成使用远程git库文件
+          uri: https://github.com/forezp/SpringcloudConfig/
+          searchPaths: respo
+          username:
+          password:
+        #native:
+        #  searchLocations: classpath:/properties/ #配置成classpath路径
+        #  searchLocations： file:D:/properties #配置成本地路径
+      label: master

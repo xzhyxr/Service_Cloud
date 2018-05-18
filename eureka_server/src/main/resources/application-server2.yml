@@ -1,0 +1,14 @@
+server:
+  port: 8767
+  
+eureka:
+  instance:
+    hostname: server2
+  client:
+    #registerWithEureka表示是否注册自身到eureka服务器;
+    #fetchRegistry表示是否从eureka服务器获取注册信息
+    #通过registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+    #registerWithEureka: false
+    #fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://server1:8766/eureka/,http://server3:8768/eureka/
