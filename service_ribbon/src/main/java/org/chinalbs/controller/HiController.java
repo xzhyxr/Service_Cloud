@@ -13,6 +13,6 @@ public class HiController {
 	
     @RequestMapping(value = "/hi")
     public String hi(@RequestParam String name){
-        return hiService.hiService(name);
+        return hiService.hiService("ribbon_" + name);
     }
 }

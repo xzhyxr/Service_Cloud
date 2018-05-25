@@ -16,5 +16,5 @@ spring:
           password:
         #native:
         #  searchLocations: classpath:/properties/ #配置成classpath路径
-        #  searchLocations： file:D:/properties #配置成本地路径
+        #  searchLocations: D:/properties #配置成本地路径
       label: master

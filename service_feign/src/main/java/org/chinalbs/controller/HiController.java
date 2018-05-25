@@ -13,6 +13,6 @@ public class HiController {
     HiService hiService;
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
     public String sayHi(@RequestParam String name){
-        return hiService.sayHi(name);
+        return hiService.sayHi("feign" + name);
     }
 }
