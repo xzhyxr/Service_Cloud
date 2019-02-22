@@ -22,7 +22,7 @@ public class HiController {
 	
 	@RequestMapping(value="/toIndex")
 	public String toIndex(){
-		return "/index";
+		return "index";
 	}
 	
 	@RequestMapping(value="/hiIndex")

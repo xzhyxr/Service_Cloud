@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 80
   
 spring:
   application:
     name: spring_web
   mvc:
     view:
-      prefix: /pages/ 
+      prefix: /pages/
       suffix: .html

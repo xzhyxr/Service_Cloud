@@ -6,5 +6,29 @@
 </head>
 <body>
 	<span>Hello World!!!!</span>
+	<!-- <div>
+		<video style="transform: rotate(0deg);" height="240" width="320" id="v1" controls="autoplay">
+			<source src="rtsp://admin:123456@172.169.0.238:554/media/video1">
+		</video>
+	</div> -->
+	<!--将<embed>标签嵌入<object>标签内部之后可以同时兼容IE和火狐-->  
+    <object classid="clsid:E23FE9C6-778E-49D4-B537-38FCDE4887D8"   
+            codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab"   
+            width="640"   
+            height="480"   
+            events="True"   
+            id="vlc2">   
+        <param name="MRL" value="rtsp://admin:123456@172.169.0.6:554/media/video1" />   
+        <param name="ShowDisplay" value="True" />   
+        <param name="Loop" value="False" />   
+        <param name="AutoPlay" value="True" />   
+            <embed type="application/x-vlc-plugin"   
+                   pluginspage="http://www.videolan.org"  
+                   width="640"  
+                   height="480"  
+                   src="rtsp://admin:123456@172.169.0.6:554/media/video1"  
+                   id="vlc">  
+            </embed>  
+    </object>  
 </body>
 </html>

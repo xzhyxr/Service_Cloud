@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Player PNaCl</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="author" content="videoexpertsgroup" />
+	<meta name="copyright" lang="ru" content="videoexpertsgroup" />
+	<meta name="description" content="Demo VXG Media Player for Chrome" />
+	<meta name="keywords" content=""/>
+	<!-- vxgplayer -->
+	<script type="text/javascript" src="vxgplayer-1.8.31.min.js"></script>
+	<link href="vxgplayer-1.8.31.min.css" rel="stylesheet"/>
+	<style>
+		.content-absolute{
+			top: 0px;
+			padding: 0px;
+			margin: 0px;
+			height: 100%;
+		}
+
+		.content{
+			width: 100% !important;
+			height: 100%;
+			padding: 0px;
+			top: -25px;
+			text-align: center;
+		}
+
+		h1 {
+			padding-top: 25px;
+			border-bottom: 1px solid #e5e4e4;
+			color: #747474;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="content-absolute">
+		<div class="content">
+			<h1>VXG Media Player (1.8.31) Multiplayers example ( Audio On (ch1), Audio Off (ch2-ch8) )</h1>
+			<div id="vxg_media_player1" class="vxgplayer" width="300" height="240" url="rtsp://admin:123456@172.169.0.6:554/media/video1" aspect-ratio latency="3000000" autostart controls avsync debug></div>
+		</div>
+	</div>
+</body>
+</html>
